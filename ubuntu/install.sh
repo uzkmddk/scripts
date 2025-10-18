@@ -128,7 +128,7 @@ install_kubectx() {
     sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
     # Remove everything from the cloned kubectx repo except kubectx and kubens shell scripts and completion directory
-    sudo bash -c 'cd /opt/kubectx && find . -mindepth 1 -maxdepth 1 \
+    sudo sh -c 'cd /opt/kubectx && find . -mindepth 1 -maxdepth 1 \
       ! -name kubectx \
       ! -name kubens \
       ! -name completion \
